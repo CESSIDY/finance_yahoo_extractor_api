@@ -1,9 +1,6 @@
-from django.test import TestCase, Client
+from django.test import TestCase
 from django.urls import reverse
-from rest_framework.authtoken.models import Token
-from rest_framework.test import force_authenticate
 from rest_framework.test import APIRequestFactory, APIClient
-from analytics.views import GetAnalyticsView, UpdateAnalyticsView, UpdateDefaultAnalyticsView
 from analytics.service import YahooAnalyticsService
 
 
